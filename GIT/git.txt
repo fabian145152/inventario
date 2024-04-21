@@ -35,6 +35,11 @@ git es sistema de control de versiones
 	git add git.txt		# solo ese archivos
 	git add .txt		# todos los txt
 	git add . 			# todos los archivos
+	
 	git add arch_1 arch_2 etc 	# si tengo que agregar + de 1 archivo nombres separados por un " "
+				si modifico el archivo y hago git status
+				me lista en rojo los archivos modificados.
+				hago git add git.txt y me stagea el archivo nuevamante
 
+	git commit -m "nombre del commit"		
 

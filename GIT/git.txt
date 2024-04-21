@@ -1,0 +1,40 @@
+
+	video 
+	https://www.youtube.com/watch?v=VdGzPZ31ts8
+
+git es sistema de control de versiones
+1 instalar git
+2 abrir git bush here en la carpeta de trabajo
+	
+	git version    #veo la version
+	git config --global user.name "Fabian Nogueroles"
+	git config --global user.email laboratorio.fabian@gmail.com  # sin comillas
+	git config --global core.editor "code --wait"                # es para usar VSC y esperar a qie lo abra
+	git config --global -e				             # abre vsc y si esta todo bien 
+								     muestra la configuracion
+								     Luego lo cierro
+	git config --global core.auto crlf true			     # si es windows
+	git config --global core.auto crlf INPUT		     # si es linux o mac
+
+		con esto esta configurado git en nuestra pc
+
+	git config -h				# help
+	
+	ls			# lista todas las carpetas y archivos
+	pwd			# me indica el directorio donde estoy
+	cd nombre_carpeta	# me cambia a esa carpeta
+	cd primer letra de la carpeta + tab, me completa el nombre 
+	cd.. 			# voy a la carpeta enterior
+	mkdir nueva_carpeta	# crea carpeta 
+
+	git init	# inicializa el repositorio local, tambien crea una carpeta oculta que se llama .git
+	git -a .git	# me lista lo que tiene la carpeta, que son todos los archicos de mi repo y todos los commit
+	code . 		# me abre el IDE
+	git status	# me indica los commit echos
+	git add     # selecciona los archivos a seguir
+	git add git.txt		# solo ese archivos
+	git add .txt		# todos los txt
+	git add . 			# todos los archivos
+	git add arch_1 arch_2 etc 	# si tengo que agregar + de 1 archivo nombres separados por un " "
+
+

@@ -36,10 +36,26 @@ git es sistema de control de versiones
 	git add .txt		# todos los txt
 	git add . 			# todos los archivos
 	
+	
+					git add
 	git add arch_1 arch_2 etc 	# si tengo que agregar + de 1 archivo nombres separados por un " "
 				si modifico el archivo y hago git status
 				me lista en rojo los archivos modificados.
 				hago git add git.txt y me stagea el archivo nuevamante
 
-	git commit -m "nombre del commit"		
+					Borrar un archivo
+	git commit -m "nombre del commit"	
+				rm nombre del archivo  	# borra el archivo
+				git status				# muestra lo que hice
+				git commit -m "borre archivo"	# lo commitea
+				git restore archivo_2.txt     #lo recupera
 
+				renombrar un archivo
+	mv archivo1 archivo_2		3 me renombre el archivo
+
+para no subir al servidor un archivo determinado
+		crear archivo .gitignore
+		y agregar en el mismo
+			.nombre del archivo
+			/nombre de la carpeta
+			y no hace el add 
